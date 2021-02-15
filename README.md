@@ -1,5 +1,5 @@
 # web-crypt
-This small web application is available at [https://crypto.elijahcobb.com](). It provides two simple functions: encrypting and decrypting.
+This small web application is available at [crypto.elijahcobb.com](https://crypto.elijahcobb.com). It provides two simple functions: encrypting and decrypting.
 
 It uses the [Web Crypto](https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API) API and always keeps everything just in memory. It never sends anything two the server. Feel free to poke around the source code. There is not much!
 
