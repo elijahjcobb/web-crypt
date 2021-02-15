@@ -1,0 +1,41 @@
+/**
+ * Elijah Cobb
+ * elijah@elijahcobb.com
+ * elijahcobb.com
+ * github.com/elijahjcobb
+ */
+
+@import "variables";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@300;400;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	color: $white;
+	background: $background;
+	font-family: 'Roboto', sans-serif;
+}
+
+.App {
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	height: 100vh;
+}
+
+header, main, footer {
+	width: 100%;
+}
+
+main {
+	height: 100%;
+}
+
+header, footer {
+	background: $black;
+	box-shadow: 0 10px 20px black;
+}
