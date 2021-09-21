@@ -11,10 +11,10 @@
  * github.com/elijahjcobb
  */
 .EncryptView {
-  padding: 40px;
+  padding: 10px;
   height: 100%;
   display: grid;
-  grid-template-rows: 10% 30% 60%;
+  grid-template-rows: 20% 60% 20%;
   grid-template-columns: 100%;
 }
 .EncryptView .input {
@@ -24,11 +24,11 @@
   background: #21252b;
   padding: 20px;
   border-radius: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 .EncryptView .input .icon {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 .EncryptView .input input, .EncryptView .input textarea {
   color: #abb2bf;
@@ -43,7 +43,7 @@
 .EncryptView .input .result, .EncryptView .input input, .EncryptView .input textarea {
   width: 100%;
   font-family: "Roboto Mono", monospace;
-  font-size: 32px;
+  font-size: 20px;
   margin-left: 20px;
 }
 

@@ -11,12 +11,12 @@
  * github.com/elijahjcobb
  */
 nav {
-  background: #21252b;
-  padding: 20px;
+  padding: 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 h1 {
@@ -27,14 +27,14 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
 }
 footer span {
   font-family: "Roboto Mono", monospace;
-  font-size: 32px;
+  font-size: 18px;
   width: 50%;
   text-align: center;
-  padding: 20px 0;
+  padding: 10px 0;
   user-select: none;
   border-radius: 20px;
   display: flex;
@@ -43,8 +43,8 @@ footer span {
 }
 footer span .icon {
   margin-right: 20px;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 footer span:hover {
   cursor: pointer;
@@ -54,14 +54,18 @@ footer .active {
   color: #21252b;
 }
 
+h1 {
+  font-size: 16px;
+}
+
 a {
   color: #abb2bf;
   text-decoration: none;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 a .icon {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   transition: all 250ms ease-in-out;
 }
 
