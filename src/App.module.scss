@@ -1,0 +1,135 @@
+/**
+ * Elijah Cobb
+ * elijah@elijahcobb.com
+ * elijahcobb.com
+ * github.com/elijahjcobb
+ */
+
+@import "variables";
+
+.container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #222;
+	box-shadow: 0 0 16px #222;
+	padding: 12px;
+
+	& > * { display: block }
+
+	h1 {
+		font-size: 1.25em;
+	}
+
+}
+
+.links {
+	display: flex;
+	align-items: center;
+
+	a {
+		color: $blue;
+		margin-left: 12px;
+	}
+}
+
+.mode {
+	width: 100%;
+	display: flex;
+	box-shadow: 0 0 16px #222;
+
+	& > div {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-grow: 1;
+		padding: 12px;
+		background: #222;
+		transition: all 250ms ease-in-out;
+
+		&:hover {
+			cursor: pointer;
+			background: $blue;
+			color: #222;
+		}
+	}
+
+	.active {
+		background: $blue;
+		color: #222;
+	}
+
+}
+
+.main {
+
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	padding: 12px;
+
+	.input {
+		background: $black;
+		box-shadow: 0 0 12px $black;
+		border-radius: 12px;
+		padding: 12px;
+		width: 100%;
+		flex-grow: 1;
+		margin: 12px;
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+
+		.icon {
+			margin-right: 8px;
+		}
+
+		& > * {
+			display: block;
+		}
+
+		input, textarea {
+			height: 100%;
+			flex-grow: 1;
+			background: none;
+			border: none;
+			outline: none;
+			resize: none;
+			color: $white;
+			font-family: "Roboto Mono", monospace;
+			font-size: 14px;
+			font-weight: normal;
+		}
+
+		.bigfield {
+
+		}
+	}
+
+	.answer {
+		transition: all 250ms ease-in-out;
+		textarea:hover {
+			cursor: pointer;
+		}
+		&:hover {
+			cursor: pointer;
+			box-shadow: 0 0 16px #444;
+			transform: scale(1.006125);
+		}
+	}
+
+	.password {
+		flex-grow: 0;
+	}
+
+
+}

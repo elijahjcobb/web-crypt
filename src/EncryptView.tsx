@@ -8,7 +8,7 @@
 import React, {ReactElement, PropsWithChildren, useState, useEffect} from "react";
 import {VpnKey, Description, Lock} from "@material-ui/icons";
 import {encrypt} from "./crypto";
-import "./EncryptView.css";
+import styles from "./App.module.scss";
 
 export interface EncryptViewProps {
 
@@ -24,18 +24,22 @@ export function EncryptView(props: PropsWithChildren<EncryptViewProps>): ReactEl
 		encrypt(value, password).then(e => setEncrypted(e)).catch(() => setEncrypted("ERROR!"));
 	}, [password, value])
 
-	return (<div className={"EncryptView"}>
-		<div className={"input"}>
-			<VpnKey className={"icon"}/>
+	return (<div className={styles.main}>
+		<div className={styles.input + " " + styles.password}>
+			<VpnKey className={styles.icon}/>
 			<input placeholder={"Password"} value={password} onChange={ev => setPassword(ev.target.value)}/>
 		</div>
-		<div className={"input"}>
-			<Description className={"icon"}/>
-			<textarea placeholder={"Content"} onChange={ev => setValue(ev.target.value)} value={value}/>
+		<div className={styles.input}>
+			<Description className={styles.icon}/>
+			<textarea className={styles.bigfield} placeholder={"Content"} onChange={ev => setValue(ev.target.value)} value={value}/>
 		</div>
-		<div className={"input"}>
-			<Lock className={"icon"}/>
-			<textarea className={"result"} disabled={true} value={encrypted}/>
+		<div
+			onClick={() => {
+				navigator.clipboard.writeText(encrypted).catch(console.error);
+			}}
+			className={styles.input + " " + styles.answer}>
+			<Lock className={styles.icon}/>
+			<textarea className={styles.bigfield} disabled={true} value={encrypted}/>
 		</div>
 	</div>);
 

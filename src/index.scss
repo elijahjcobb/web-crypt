@@ -19,24 +19,3 @@ body {
 	background: $background;
 	font-family: 'Roboto', sans-serif;
 }
-
-.App {
-	display: flex;
-	flex-direction: column;
-	width: 100vw;
-	height: 100vh;
-}
-
-nav, main, footer {
-	width: 100%;
-}
-
-main {
-	height: 80vh;
-}
-
-nav, footer {
-	background: red;
-	height: 10vh;
-	box-shadow: 0 10px 20px black;
-}
